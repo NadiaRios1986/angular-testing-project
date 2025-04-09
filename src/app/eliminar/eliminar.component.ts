@@ -1,25 +1,17 @@
 import { Component } from '@angular/core';
-import { eliminar } from '../eliminar/eliminar.component';
-
+import { TaskListComponent } from '../task-list/task-list.component';
 import { FormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-task-list',
   imports:[FormsModule],
-  templateUrl: './task-list.component.html',
-  styleUrls: ['./task-list.component.css']
+  templateUrl: './eliminar.component.html',
+  styleUrls: ['./eliminar.component.css']
 })
-export class TaskListComponent {
+export class eliminar{
 
   title= 'EVALUACION';
-
-  isvisible:boolean=true;
-
-
-  toggle(): void{
-    this.isvisible=!this,this.isvisible;
-  }
 
 
   tasks: string[] = [];

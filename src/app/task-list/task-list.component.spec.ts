@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { TaskListComponent } from './task-list.component';
 import { TaskItemComponent } from '../task-item/task-item.component';
+import { FormsModule } from '@angular/forms';
+
 
 describe('TaskListComponent', () => {
   let fixture: ComponentFixture<TaskListComponent>;
@@ -9,7 +11,7 @@ describe('TaskListComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [TaskListComponent],
-      imports:[TaskItemComponent]
+      imports:[TaskItemComponent,FormsModule,TaskListComponent]
       // Declara ambos componentes
     }).compileComponents();
 

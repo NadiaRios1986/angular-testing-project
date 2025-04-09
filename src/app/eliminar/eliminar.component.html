@@ -1,0 +1,12 @@
+<div>
+    <h1>Practica evaluación</h1>
+    <h2>LISTA DE REPRODUCCION </h2>
+    <ul>
+        @for (Item of music; track Item){
+            <li>{{Item}}</li>
+        }
+    <input type="text" name="nuevo" [(ngModel)]= "nuevo">
+    <button (click)="addItem()">Agregar canción </button>
+    
+    </ul>
+    
